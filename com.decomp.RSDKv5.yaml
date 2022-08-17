@@ -8,6 +8,8 @@ finish-args:
   - --socket=x11
   - --socket=wayland
   - --socket=pulseaudio
+  - --filesystem=~/.steam:ro
+  - --filesystem=~/.var/app/com.valvesoftware.Steam:ro
   - --persist=.
   - --device=all
 modules:
