@@ -2,5 +2,5 @@
 Type=Application
 Name=Sonic Mania
 Icon=com.decomp.RSDKv5
-Exec=RSDKv5
+Exec=run.sh
 Categories=Game;

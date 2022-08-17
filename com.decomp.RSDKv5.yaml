@@ -2,7 +2,7 @@ app-id: com.decomp.RSDKv5
 runtime: org.freedesktop.Platform
 runtime-version: "21.08"
 sdk: org.freedesktop.Sdk
-command: RSDKv5
+command: run.sh
 finish-args:
   - --share=ipc
   - --socket=x11
@@ -20,7 +20,7 @@ modules:
     make-args:
       - STATIC=0
     post-install:
-      - install -Dp -m 644 bin/Linux/SonicMania.so /app/lib/Game.so
+      - install -Dp -m 755 bin/Linux/SonicMania.so /app/lib/Game.so
     sources:
       - type: git
         url: https://github.com/Rubberduckycooly/Sonic-Mania-Decompilation.git
@@ -47,3 +47,10 @@ modules:
         path: com.decomp.RSDKv5.png
       - type: file
         path: com.decomp.RSDKv5.appdata.xml
+  - name: run
+    buildsystem: simple
+    build-commands:
+      - install -Dp -m 755 run.sh /app/bin/run.sh
+    sources:
+      - type: file
+        path: run.sh
