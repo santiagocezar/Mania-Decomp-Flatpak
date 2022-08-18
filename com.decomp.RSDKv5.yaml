@@ -33,6 +33,8 @@ modules:
     no-make-install: true
     make-args:
       - RSDK_ONLY=1
+      # probably it was only -fsigned-char what whas causing problems but just in case
+      - CXXFLAGS=
       - AUTOBUILD=1
     post-install:
       - install -Dp -m 755 bin/Linux/GL3/RSDKv5 /app/bin/RSDKv5
