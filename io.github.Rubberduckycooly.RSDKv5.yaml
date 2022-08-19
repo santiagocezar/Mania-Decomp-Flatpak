@@ -8,10 +8,12 @@ finish-args:
   - --socket=x11
   - --socket=wayland
   - --socket=pulseaudio
+  - --persist=.
+  # gamepads
+  - --device=all
+  # to copy the Data.rsdk from user installed Sonic Mania
   - --filesystem=~/.steam:ro
   - --filesystem=~/.var/app/com.valvesoftware.Steam:ro
-  - --persist=.
-  - --device=all
 modules:
   - glfw.yaml
   - shared-modules/glew/glew.json
@@ -26,8 +28,9 @@ modules:
     sources:
       - type: git
         url: https://github.com/Rubberduckycooly/Sonic-Mania-Decompilation.git
-        disable-submodules: true
         branch: master
+        commit: 5be9e0d6c20b6af34b4b624b080e51f1736ec93b
+        disable-submodules: true
   - name: rsdkv5
     no-autogen: true
     no-make-install: true
@@ -44,6 +47,7 @@ modules:
       - type: git
         url: https://github.com/Rubberduckycooly/RSDKv5-Decompilation.git
         branch: master
+        commit: 5048b45348dc095a48f4dc3d9dd2c121bb84a676
       - type: file
         path: io.github.Rubberduckycooly.RSDKv5.desktop
       - type: file
