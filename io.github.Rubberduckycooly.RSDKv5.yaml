@@ -12,8 +12,8 @@ finish-args:
   # gamepads
   - --device=all
   # to copy the Data.rsdk from user installed Sonic Mania
-  - --filesystem=~/.steam:ro
-  - --filesystem=~/.var/app/com.valvesoftware.Steam:ro
+  - --filesystem=~/.steam/steam/steamapps/common/Sonic Mania/Data.rsdk:ro
+  - --filesystem=~/.var/app/com.valvesoftware.Steam/.steam/steam/steamapps/common/Sonic Mania/Data.rsdk:ro
 modules:
   - glfw.yaml
   - shared-modules/glew/glew.json
