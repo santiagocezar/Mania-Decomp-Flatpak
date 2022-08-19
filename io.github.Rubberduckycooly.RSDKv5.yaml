@@ -28,8 +28,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/Rubberduckycooly/Sonic-Mania-Decompilation.git
-        branch: master
-        commit: 5be9e0d6c20b6af34b4b624b080e51f1736ec93b
+        commit: acf3e745c946fe9abc72ac0c77d713c70df8f646
         disable-submodules: true
   - name: rsdkv5
     no-autogen: true
@@ -40,24 +39,23 @@ modules:
       - AUTOBUILD=1
     post-install:
       - install -Dp -m 755 bin/Linux/GL3/RSDKv5 /app/bin/RSDKv5
-      - install -Dp -m 644 io.github.Rubberduckycooly.RSDKv5.desktop /app/share/applications/io.github.Rubberduckycooly.RSDKv5.desktop
-      - install -Dp -m 644 io.github.Rubberduckycooly.RSDKv5.png /app/share/icons/hicolor/256x256/apps/io.github.Rubberduckycooly.RSDKv5.png
-      - install -Dp -m 644 io.github.Rubberduckycooly.RSDKv5.appdata.xml /app/share/appdata/io.github.Rubberduckycooly.RSDKv5.appdata.xml
     sources:
       - type: git
         url: https://github.com/Rubberduckycooly/RSDKv5-Decompilation.git
-        branch: master
-        commit: 5048b45348dc095a48f4dc3d9dd2c121bb84a676
+        commit: 5242094286da0bc68c43e65c9d18935d9ab00fd7
+  - name: run
+    buildsystem: simple
+    build-commands:
+      - install -Dp -m 644 io.github.Rubberduckycooly.RSDKv5.desktop /app/share/applications/io.github.Rubberduckycooly.RSDKv5.desktop
+      - install -Dp -m 644 io.github.Rubberduckycooly.RSDKv5.png /app/share/icons/hicolor/256x256/apps/io.github.Rubberduckycooly.RSDKv5.png
+      - install -Dp -m 644 io.github.Rubberduckycooly.RSDKv5.appdata.xml /app/share/appdata/io.github.Rubberduckycooly.RSDKv5.appdata.xml
+      - install -Dp -m 755 run.sh /app/bin/run.sh
+    sources:
+      - type: file
+        path: run.sh
       - type: file
         path: io.github.Rubberduckycooly.RSDKv5.desktop
       - type: file
         path: io.github.Rubberduckycooly.RSDKv5.png
       - type: file
         path: io.github.Rubberduckycooly.RSDKv5.appdata.xml
-  - name: run
-    buildsystem: simple
-    build-commands:
-      - install -Dp -m 755 run.sh /app/bin/run.sh
-    sources:
-      - type: file
-        path: run.sh

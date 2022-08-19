@@ -5,11 +5,11 @@
   <summary> A complete decompilation of Retro Engine (v5)</summary>
   <description>
     <p>
-    A complete decompilation of Retro Engine v5, used in <i>Sonic Mania Plus</i>.
+    A complete decompilation of Retro Engine v5, used in Sonic Mania Plus.
     It allows to run this game natively, and facilitates the installation and development 
     of mods.
+    To play this decompilation, you neeed to own a Steam copy of Sonic Mania (or Plus).
     </p>
-    <p>To play this decompilation, you neeed to own a Steam copy of <i>Sonic Mania (or Plus)</i>.</p>
   </description>
   <url type="homepage">https://github.com/Rubberduckycooly/RSDKv5-Decompilation/</url>
   <screenshots>
