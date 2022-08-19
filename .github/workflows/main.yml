@@ -18,5 +18,5 @@ jobs:
     - uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v4
       with:
         bundle: rsdkv5.flatpak
-        manifest-path: com.decomp.RSDKv5.yaml
+        manifest-path: io.github.Rubberduckycooly.RSDKv5.yaml
         cache-key: flatpak-builder-${{ github.sha }}

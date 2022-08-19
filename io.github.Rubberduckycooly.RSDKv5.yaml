@@ -1,4 +1,4 @@
-app-id: com.decomp.RSDKv5
+app-id: io.github.Rubberduckycooly.RSDKv5
 runtime: org.freedesktop.Platform
 runtime-version: "21.08"
 sdk: org.freedesktop.Sdk
@@ -33,24 +33,23 @@ modules:
     no-make-install: true
     make-args:
       - RSDK_ONLY=1
-      # probably it was only -fsigned-char what whas causing problems but just in case
       - CXXFLAGS=
       - AUTOBUILD=1
     post-install:
       - install -Dp -m 755 bin/Linux/GL3/RSDKv5 /app/bin/RSDKv5
-      - install -Dp -m 644 com.decomp.RSDKv5.desktop /app/share/applications/com.decomp.RSDKv5.desktop
-      - install -Dp -m 644 com.decomp.RSDKv5.png /app/share/icons/hicolor/256x256/apps/com.decomp.RSDKv5.png
-      - install -Dp -m 644 com.decomp.RSDKv5.appdata.xml /app/share/appdata/com.decomp.RSDKv5.appdata.xml
+      - install -Dp -m 644 io.github.Rubberduckycooly.RSDKv5.desktop /app/share/applications/io.github.Rubberduckycooly.RSDKv5.desktop
+      - install -Dp -m 644 io.github.Rubberduckycooly.RSDKv5.png /app/share/icons/hicolor/256x256/apps/io.github.Rubberduckycooly.RSDKv5.png
+      - install -Dp -m 644 io.github.Rubberduckycooly.RSDKv5.appdata.xml /app/share/appdata/io.github.Rubberduckycooly.RSDKv5.appdata.xml
     sources:
       - type: git
         url: https://github.com/Rubberduckycooly/RSDKv5-Decompilation.git
         branch: master
       - type: file
-        path: com.decomp.RSDKv5.desktop
+        path: io.github.Rubberduckycooly.RSDKv5.desktop
       - type: file
-        path: com.decomp.RSDKv5.png
+        path: io.github.Rubberduckycooly.RSDKv5.png
       - type: file
-        path: com.decomp.RSDKv5.appdata.xml
+        path: io.github.Rubberduckycooly.RSDKv5.appdata.xml
   - name: run
     buildsystem: simple
     build-commands:
