@@ -10,4 +10,4 @@ done
 
 ln -srf /app/lib/Game.so .
 
-RSDKv5
+RSDKv5U
