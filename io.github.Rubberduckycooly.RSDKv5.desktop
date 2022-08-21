@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Application
-Version=1.0
-Name=Sonic Mania
-Icon=io.github.Rubberduckycooly.RSDKv5
-Exec=run.sh
-Categories=Game;
