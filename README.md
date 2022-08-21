@@ -1,6 +1,6 @@
 # RSDKv5U Flatpak
 
-Flatpak for the (RSDKv5)[https://github.com/Rubberduckycooly/RSDKv5-Decompilation] and (Sonic Mania)[https://github.com/Rubberduckycooly/Sonic-Mania-Decompilation] decompilations.
+Flatpak for the [RSDKv5](https://github.com/Rubberduckycooly/RSDKv5-Decompilation) and [Sonic Mania](https://github.com/Rubberduckycooly/Sonic-Mania-Decompilation) decompilations.
 
 # Installation
 
