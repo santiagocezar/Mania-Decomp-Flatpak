@@ -1,3 +1,7 @@
+# ⚠️ Notice ⚠️
+
+The flatpak is now mantained at https://github.com/flathub/io.github.santiagocezar.maniatic-launcher and can now be installed from flathub
+
 # RSDKv5U Flatpak
 
 Flatpak for the [RSDKv5](https://github.com/Rubberduckycooly/RSDKv5-Decompilation) and [Sonic Mania](https://github.com/Rubberduckycooly/Sonic-Mania-Decompilation) decompilations.
